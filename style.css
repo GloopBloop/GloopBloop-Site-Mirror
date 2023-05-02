@@ -117,12 +117,34 @@ I'd want to use it
       float: left;
       width: 100%;
    }
+
+   .lclosecolumn {
+      float: left;
+      width: 100%;
+   }
+
+   .rclosecolumn {
+      float: left;
+      width: 100%;
+   }
 }
 
 @media (min-width: 801px) {
    .column {
       float: left;
       width: 50%;
+   }
+
+   .lclosecolumn {
+      float: left;
+      margin-left: 25%;
+      width: 25%;
+   }
+
+   .rclosecolumn {
+      float: left;
+      margin-right: 25%;
+      width: 25%;
    }
 }
 
@@ -185,14 +207,14 @@ li a.active {
    color: white;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 801px) {
    p.blurb {
       margin-left: 30%;
       margin-right: 30%;
    }
 }
 
-@media (max-width: 900ox) {
+@media (max-width: 800px) {
    p.blurb {
       margin-left: 0%;
       margin-right: 0%;
