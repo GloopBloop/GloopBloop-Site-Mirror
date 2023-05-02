@@ -112,9 +112,18 @@ I'd want to use it
    padding: 10px;
 }
 
-.column {
-   float: left;
-   width: 50%;
+@media (max-width: 800px) {
+   .column {
+      float: left;
+      width: 100%;
+   }
+}
+
+@media (min-width: 801px) {
+   .column {
+      float: left;
+      width: 50%;
+   }
 }
 
 .row:after {
@@ -126,7 +135,7 @@ I'd want to use it
 
 html {
    color-scheme: dark light;
-   font-family: 'Atkinson Hyperlegible';
+   font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
 }
 
 header {
