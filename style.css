@@ -132,7 +132,7 @@ html {
 header {
    background: #503864;
    background-blend-mode: overlay;
-   background-image: url(assets/images/schmoovinlines.gif);
+   background-image: url(assets/images/smoothlines.gif);
    background-repeat: round;
 }
 
@@ -150,10 +150,8 @@ footer {
    padding: 0;
    */
    background: #503864;
-   /*
    background-blend-mode: overlay;
-   background-image: url(assets/images/schmoovinlines.gif);
-   transform: scaleX(-1);
+   background-image: url(assets/images/smoothlines-reversed.gif);
    background-repeat: round;
-   */
+
 }
