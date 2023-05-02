@@ -121,6 +121,8 @@ I'd want to use it
    padding: 10px;
 }
 
+/* Margin Classes */
+
 @media (max-width: 800px) {
    .column {
       float: left;
@@ -133,6 +135,16 @@ I'd want to use it
    }
 
    .rclosecolumn {
+      float: left;
+      width: 100%;
+   }
+
+   .column-marginright {
+      float: left;
+      width: 100%;
+   }
+
+   .column-marginleft {
       float: left;
       width: 100%;
    }
@@ -154,6 +166,34 @@ I'd want to use it
       float: left;
       margin-right: 25%;
       width: 25%;
+   }
+
+   .column-marginright {
+      float: left;
+      margin-right: 10%;
+      width: 40%;
+   }
+
+   .column-marginleft {
+      float: left;
+      margin-left: 10%;
+      width: 40%;
+   }
+}
+
+@media (max-width: 800px) {
+   .about-images {
+      width: 49%;
+      max-width: 256px;
+      border-radius: 10%;
+   }
+}
+
+@media (min-width: 801px) {
+   .about-images {
+      width: 100%;
+      max-width: 256px;
+      border-radius: 10%;
    }
 }
 
