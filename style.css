@@ -133,6 +133,72 @@ I'd want to use it
 
 }
 
+a:link.button,
+a:visited.button {
+   background-color: white;
+   color: black;
+   border: 2px solid black;
+   padding: 10px 20px;
+   border-radius: 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin: 2px;
+}
+
+a:hover.button,
+a:active.button {
+   background-color: #9d6ec5;
+   color: white;
+   border: 2px solid white;
+}
+
+/* Navbar */
+
+ul.nav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #30253a;
+}
+
+li.nav {
+   float: left;
+}
+
+li a {
+   text-decoration: none;
+   display: block;
+   padding: 8px;
+   background-color: #30253a;
+   color: white;
+}
+
+li a:hover:not(.active) {
+   background-color: black;
+   color: white;
+}
+
+li a.active {
+   background-color: #9d6ec5;
+   color: white;
+}
+
+@media (min-width: 901px) {
+   p.blurb {
+      margin-left: 30%;
+      margin-right: 30%;
+   }
+}
+
+@media (max-width: 900ox) {
+   p.blurb {
+      margin-left: 0%;
+      margin-right: 0%;
+   }
+}
+
 html {
    color-scheme: dark light;
    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
