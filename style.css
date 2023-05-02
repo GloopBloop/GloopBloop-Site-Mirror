@@ -95,11 +95,33 @@
    backface-visibility: hidden;
 }
 
-header {
-   background: #503864;
-   background-blend-mode: overlay;
-   background-image: url(assets/images/schmoovinlines.gif);
-   background-repeat: round;
+/* 
+Note: .columns should be unused, but I'm keeping it
+here in case I want to fix/improve it or there's some reason
+I'd want to use it 
+*/
+.columns {
+   column-count: 2;
+   column-gap: 40px;
+   column-rule-style: solid;
+   column-rule-width: 5px;
+   column-rule-color: #9d6ec5;
+   margin: auto;
+   max-width: 1000px;
+   border: 5px solid #9d6ec5;
+   padding: 10px;
+}
+
+.column {
+   float: left;
+   width: 50%;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+
 }
 
 html {
@@ -107,7 +129,31 @@ html {
    font-family: 'Atkinson Hyperlegible';
 }
 
+header {
+   background: #503864;
+   background-blend-mode: overlay;
+   background-image: url(assets/images/schmoovinlines.gif);
+   background-repeat: round;
+}
+
 body {
    background-color: #503864;
    text-align: center;
+}
+
+footer {
+   /*
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   */
+   background: #503864;
+   /*
+   background-blend-mode: overlay;
+   background-image: url(assets/images/schmoovinlines.gif);
+   transform: scaleX(-1);
+   background-repeat: round;
+   */
 }
