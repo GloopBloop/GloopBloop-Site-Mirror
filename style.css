@@ -277,6 +277,45 @@ li a.active {
    height: 200px;
 }
 
+/* Feed class (Currently used for About mastofeed embed) */
+.feed {
+   border: none;
+   background-color: white;
+   padding: 5px;
+   border-radius: 20px;
+}
+
+/* Hide feed with/without header depending on size */
+/* I know that the chances of someone using a screen size
+this small are absurdly low, but I wanted to add it anyway. */
+@media (max-width: 350px) {
+   .feed-header {
+      display: none;
+   }
+}
+
+@media (min-width: 350px) {
+   .feed-noheader {
+      display: none;
+   }
+}
+
+
+/* RSS 2 HTML (rss.bloople.net) Stuff */
+/* Currently unused, but if I replace mastofeed or otherwise
+want an RSS reed I'll probably use it. */
+
+h3.feed-title {
+   display: none
+}
+
+h4.feed-item-title {
+   display: none;
+}
+
+
+/* Main Page Style */
+
 html {
    color-scheme: dark light;
    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
