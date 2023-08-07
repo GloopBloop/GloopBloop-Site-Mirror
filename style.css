@@ -104,6 +104,15 @@
    backface-visibility: hidden;
 }
 
+.rounded-image {
+   width: 100%;
+   height: 315px;
+   max-width: 560px;
+   background: #000000;
+   border-radius: 20px;
+   backface-visibility: hidden;
+}
+
 /* 
 Note: .columns should be unused, but I'm keeping it
 here in case I want to fix/improve it or there's some reason
@@ -125,6 +134,11 @@ I'd want to use it
 
 @media (max-width: 800px) {
    .column {
+      float: left;
+      width: 100%;
+   }
+
+   .columnthirds {
       float: left;
       width: 100%;
    }
@@ -154,6 +168,11 @@ I'd want to use it
    .column {
       float: left;
       width: 50%;
+   }
+
+   .columnthirds {
+      float: left;
+      width: 33%;
    }
 
    .lclosecolumn {
@@ -319,6 +338,7 @@ h4.feed-item-title {
 html {
    color-scheme: dark light;
    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+   color:white;
 }
 
 header {
